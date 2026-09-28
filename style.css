@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+
+    background-color: #000;
+
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+
+    background-color: #1ed760;
+
+    border-radius: 50%;
+
+    margin: 0 auto 35px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 1px;
+
+    transform: rotate(-15deg);
+}
+
+.logo span {
+    color: #000;
+
+    font-size: 13px;
+
+    line-height: 4px;
+}
+
+h1 {
+    text-align: center;
+
+    font-size: 32px;
+
+    margin-bottom: 35px;
+}
+
+.campo {
+    margin-bottom: 22px;
+}
+
+.campo label,
+.genero > label {
+    display: block;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 9px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #727272;
+
+    border-radius: 5px;
+
+    background-color: #121212;
+
+    color: white;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+input:focus {
+    border-color: #fff;
+
+    box-shadow: 0 0 0 1px #fff;
+}
+
+input::placeholder {
+    color: #a7a7a7;
+}
+
+.genero {
+    margin-bottom: 25px;
+}
+
+.opcoes {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+}
+
+.opcoes label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    font-size: 14px;
+}
+
+.opcoes input {
+    accent-color: #1ed760;
+}
+
+.termos {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+
+    font-size: 13px;
+
+    line-height: 20px;
+}
+
+.termos input {
+    margin-top: 3px;
+
+    accent-color: #1ed760;
+}
+
+button {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background-color: #1ed760;
+
+    color: #000;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #1fdf64;
+
+    transform: scale(1.02);
+}
+
+.login {
+    text-align: center;
+
+    margin-top: 30px;
+
+    color: #b3b3b3;
+
+    font-size: 14px;
+}
+
+.login a {
+    color: #fff;
+
+    font-weight: bold;
+}
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .opcoes {
+        flex-direction: column;
+
+        gap: 12px;
+    }
+}

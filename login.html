@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro - Spotify</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="logo">
+            <span>Listen</span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span>music</span>
+        </div>
+
+        <h1>Crie sua conta</h1>
+
+        <form id="cadastroForm">
+
+            <div class="campo">
+                <label for="email">Qual é o seu e-mail?</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Digite seu e-mail"
+                    required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="senha">Crie uma senha</label>
+
+                <input
+                    type="password"
+                    id="senha"
+                    placeholder="Digite uma senha"
+                    minlength="6"
+                    required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="nome">Qual é o seu nome?</label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Digite seu nome"
+                    required
+                    
+                >
+            </div>
+
+            <div class="campo">
+                <label for="data">Qual é a sua data de nascimento?</label>
+
+                <input
+                    type="date"
+                    id="data"
+                    required
+                >
+            </div>
+                <div class="campo">
+                <label for="endereco">Endereço</label>
+
+                <input
+                    type="text"
+                    id="endereco"
+                    placeholder="Digite seu endereço"
+                    required
+                >
+            </div>
+             <div class="campo">
+                <label for="cpf">CPF</label>
+
+                <input
+                    type="text"
+                    id="cpf"
+                    placeholder="000.000.000-00"
+                    maxlength="14"
+                    required
+                >
+            </div>
+             <div class="campo imagem">
+
+                <label for="imagem">Imagem de perfil</label>
+
+                <div class="imagem-container">
+
+                    <img
+                        id="preview"
+                        src=""
+                        alt="Pré-visualização"
+                    >
+
+                    <label for="imagem" class="botao-imagem">
+                        Escolher imagem
+                    </label>
+
+                    <input
+                        type="file"
+                        id="imagem"
+                        accept="image/*"
+                        hidden
+                    >
+
+                </div>
+
+            <div class="genero">
+
+                <label>Qual é o seu gênero?</label>
+
+                <div class="opcoes">
+
+                    <label>
+                        <input type="radio" name="genero" value="masculino">
+                        Masculino
+                    </label>
+
+                    <label>
+                        <input type="radio" name="genero" value="feminino">
+                        Feminino
+                    </label>
+
+                    <label>
+                        <input type="radio" name="genero" value="outro">
+                        Outro
+                    </label>
+
+                </div>
+
+            </div>
+
+            <div class="termos">
+
+                <input type="checkbox" id="termos" required>
+
+                <label for="termos">
+                    Eu concordo com os termos e condições.
+                </label>
+
+            </div>
+
+            <button type="submit">
+                Inscrever-se
+            </button>
+
+        </form>
+        
+
+        <p class="login">
+            Já tem uma conta?
+            <a href="#">Entrar</a>
+        </p>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
